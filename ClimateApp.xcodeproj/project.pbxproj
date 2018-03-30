@@ -14,6 +14,7 @@
 		63E28AF81B99C36100FBF6E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E28AF41B99C36100FBF6E0 /* Main.storyboard */; };
 		63E28AF91B99C36100FBF6E0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28AF51B99C36100FBF6E0 /* WeatherViewController.swift */; };
 		63E28AFF1B99C3B300FBF6E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E28AFE1B99C3B300FBF6E0 /* LaunchScreen.xib */; };
+		BC80C10B206E17FD0017A5D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC80C10A206E17FD0017A5D1 /* Default-568h@2x.png */; };
 		BCF50071206E135A001E438F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BCF50070206E135A001E438F /* README.md */; };
 		CA31811CB8B714FD6DB4B575 /* Pods_ClimateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D7DBE977C035234C31737 /* Pods_ClimateApp.framework */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		63E28AF51B99C36100FBF6E0 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		63E28AFE1B99C3B300FBF6E0 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		9F91BAAFCB5016634B0F0DF0 /* Pods-ClimateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClimateApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClimateApp/Pods-ClimateApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BC80C10A206E17FD0017A5D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BCF50070206E135A001E438F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		CB9D7DBE977C035234C31737 /* Pods_ClimateApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClimateApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 		63E28AC21B99C32400FBF6E0 = {
 			isa = PBXGroup;
 			children = (
+				BC80C10A206E17FD0017A5D1 /* Default-568h@2x.png */,
 				63E28ACD1B99C32400FBF6E0 /* Clima */,
 				63E28ACC1B99C32400FBF6E0 /* Products */,
 				0BA7530EF01C0D63E64BD5C0 /* Pods */,
@@ -194,6 +197,7 @@
 				63E28AF71B99C36100FBF6E0 /* Images.xcassets in Resources */,
 				63E28AFF1B99C3B300FBF6E0 /* LaunchScreen.xib in Resources */,
 				BCF50071206E135A001E438F /* README.md in Resources */,
+				BC80C10B206E17FD0017A5D1 /* Default-568h@2x.png in Resources */,
 				63E28AF81B99C36100FBF6E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

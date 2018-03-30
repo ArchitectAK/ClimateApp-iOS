@@ -7,31 +7,39 @@
 //
 
 import UIKit
+import CoreLocation
 
 
-class WeatherViewController: UIViewController {
+class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     
     //Constants
     let WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather"
     let APP_ID = "e72ca729af228beabd5d20e3b7749713"
     
-
-    //TODO: Declare instance variables here
     
-
+    //TODO: Declare instance variables here
+    let locationManager = CLLocationManager()
+    
     
     //Pre-linked IBOutlets
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         //TODO:Set up the location manager here.
-    
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        
+        // Asking permission from user
+        
+        locationManager.requestWhenInUseAuthorization()
+        
         
         
     }
@@ -43,7 +51,7 @@ class WeatherViewController: UIViewController {
     
     //Write the getWeatherData method here:
     
-
+    
     
     
     
@@ -51,11 +59,11 @@ class WeatherViewController: UIViewController {
     
     //MARK: - JSON Parsing
     /***************************************************************/
-   
+    
     
     //Write the updateWeatherData method here:
     
-
+    
     
     
     
@@ -82,7 +90,7 @@ class WeatherViewController: UIViewController {
     
     
     
-
+    
     
     //MARK: - Change City Delegate methods
     /***************************************************************/
@@ -90,7 +98,7 @@ class WeatherViewController: UIViewController {
     
     //Write the userEnteredANewCityName Delegate method here:
     
-
+    
     
     //Write the PrepareForSegue Method here
     

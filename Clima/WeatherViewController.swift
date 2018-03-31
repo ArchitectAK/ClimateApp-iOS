@@ -17,6 +17,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     let APP_ID = "0d0c15cd1f4d893cca83a6b0061bbccb"
     
     
+    
     //TODO: Declare instance variables here
     let locationManager = CLLocationManager()
     
@@ -38,7 +39,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         
         // Asking permission from user
         locationManager.requestWhenInUseAuthorization()
-        // starting location updates
+        
         locationManager.startUpdatingLocation()
         
         

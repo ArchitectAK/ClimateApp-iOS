@@ -58,9 +58,11 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         Alamofire.request(url, method: .get, parameters: parameters).responseJSON {
             response in
             if response.result.isSuccess{
+                print("Got the weather data")
                 print(response)
             } else {
-                
+                print("Error \(String(describing: response.result.error))")
+                self.cityLabel.text = "Connection Issue"
             }
         }
     }
@@ -103,7 +105,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
             print("longitude = \(location.coordinate.longitude) , latitude = \(location.coordinate.latitude)")
             let latitude = String (location.coordinate.latitude)
             let longitude = String (location.coordinate.longitude)
-            let params : [String : String] = ["lat" : latitude, "long" :  longitude, "appid" : APP_ID]
+            let params : [String : String] = ["lat" : latitude, "lon" :  longitude, "appid" : APP_ID]
             
             
             getWeatherData(url: WEATHER_URL, parameters: params)

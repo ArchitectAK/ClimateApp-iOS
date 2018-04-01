@@ -81,7 +81,8 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     
     //Write the updateWeatherData method here:
     func updateWeatherData(json : JSON)  {
-        
+        let tempResult = json["main"]["temp"]
+        temperatureLabel.text = tempResult
     }
     
     

@@ -133,6 +133,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
     }
     
     
+    
     //Write the didFailWithError method here:
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
@@ -148,7 +149,8 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
     
     //Write the userEnteredANewCityName Delegate method here:
     func userEnteredNewCityName(city: String) {
-        
+        let params : [String : String] = ["q" : city, "appid" : APP_ID]
+        getWeatherData(url: WEATHER_URL, parameters: params)
     }
     
     
